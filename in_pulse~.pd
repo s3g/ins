@@ -1,0 +1,58 @@
+#N canvas 545 150 939 710 10;
+#X obj 519 415 expr~ $v1 > $v2;
+#X obj 606 367 / 100;
+#X floatatom 606 340 5 0 0 0 - - -, f 5;
+#X obj 125 127 hsl 150 15 0.25 400 0 0 empty \$0-bpm bpm -2 -8 0 10
+-262144 -1 -1 11100 1;
+#X obj 285 127 nbx 5 14 0.25 400 0 0 empty \$0-bpm empty 0 -8 0 10
+-262144 -1 -1 1 256;
+#X obj 125 159 hsl 150 15 0.01 99.99 0 0 empty \$0-width pulsewidth_%
+-2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 285 159 nbx 5 14 0.01 50 0 0 empty \$0-width empty 0 -8 0 10
+-262144 -1 -1 0.01 256;
+#X obj 519 286 phasor~;
+#X floatatom 519 155 5 0 0 0 - - -, f 5;
+#X obj 519 252 line~;
+#X obj 519 224 pack f 10;
+#X obj 618 625 dac~;
+#X obj 125 190 hsl 150 15 0.01 2 0 0 empty \$0-scale scale -2 -8 0
+10 -262144 -1 -1 0 1;
+#X obj 285 190 nbx 5 14 0.01 2 0 0 empty \$0-scale empty 0 -8 0 10
+-262144 -1 -1 0.01 256;
+#X obj 125 224 hsl 150 15 -1 1 0 0 empty \$0-offset offset -2 -8 0
+10 -262144 -1 -1 0 1;
+#X obj 285 224 nbx 5 14 -1 1 0 0 empty \$0-offset empty 0 -8 0 10 -262144
+-1 -1 0 256;
+#X obj 617 481 *~, f 30;
+#X obj 617 518 +~, f 41;
+#X obj 794 447 line~;
+#X obj 860 444 line~;
+#X msg 794 425 \$1 20;
+#X msg 861 421 \$1 20;
+#X floatatom 794 397 5 0 0 0 - - -, f 5;
+#X floatatom 861 399 5 0 0 0 - - -, f 5;
+#X obj 617 592 clip~ -1 1;
+#X obj 519 113 / 60;
+#X connect 0 0 16 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 0;
+#X connect 3 0 25 0;
+#X connect 5 0 2 0;
+#X connect 7 0 0 0;
+#X connect 8 0 10 0;
+#X connect 9 0 7 0;
+#X connect 10 0 9 0;
+#X connect 12 0 22 0;
+#X connect 14 0 23 0;
+#X connect 16 0 17 0;
+#X connect 17 0 24 0;
+#X connect 18 0 16 1;
+#X connect 19 0 17 1;
+#X connect 20 0 18 0;
+#X connect 21 0 19 0;
+#X connect 22 0 20 0;
+#X connect 23 0 21 0;
+#X connect 24 0 11 0;
+#X connect 24 0 11 1;
+#X connect 25 0 8 0;
+#X coords 0 -1 1 1 260 220 1 100 100;
