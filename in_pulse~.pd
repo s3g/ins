@@ -3,15 +3,15 @@
 #X obj 606 367 / 100;
 #X floatatom 606 340 5 0 0 0 - - -, f 5;
 #X obj 125 127 hsl 150 15 0.25 400 0 0 empty \$0-bpm bpm -2 -8 0 10
--262144 -1 -1 11100 1;
+-262144 -1 -1 0 1;
 #X obj 285 127 nbx 5 14 0.25 400 0 0 empty \$0-bpm empty 0 -8 0 10
--262144 -1 -1 1 256;
+-262144 -1 -1 0.25 256;
 #X obj 125 159 hsl 150 15 0.01 99.99 0 0 empty \$0-width pulsewidth_%
 -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 285 159 nbx 5 14 0.01 50 0 0 empty \$0-width empty 0 -8 0 10
--262144 -1 -1 0.01 256;
+#X obj 285 159 nbx 5 14 0.01 99.99 0 0 empty \$0-width empty 0 -8 0
+10 -262144 -1 -1 0.01 256;
 #X obj 519 286 phasor~;
-#X floatatom 519 155 5 0 0 0 - - -, f 5;
+#X floatatom 522 155 5 0 0 0 - - -, f 5;
 #X obj 519 252 line~;
 #X obj 519 224 pack f 10;
 #X obj 618 625 dac~;
