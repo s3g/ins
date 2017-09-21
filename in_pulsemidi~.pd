@@ -1,7 +1,7 @@
 #N canvas 484 291 1599 774 10;
-#X obj 125 127 hsl 150 15 0.25 400 0 0 empty \$0-bpm bpm -2 -8 0 10
+#X obj 125 127 hsl 150 15 0.25 2000 0 0 empty \$0-bpm bpm -2 -8 0 10
 -262144 -1 -1 0 1;
-#X obj 285 127 nbx 5 14 0.25 400 0 0 empty \$0-bpm empty 0 -8 0 10
+#X obj 285 127 nbx 5 14 0.25 2000 0 0 empty \$0-bpm empty 0 -8 0 10
 -262144 -1 -1 0.25 256;
 #X obj 519 107 / 60;
 #X obj 125 159 hsl 150 15 0 127 0 0 empty \$0-note note_midi -2 -8
